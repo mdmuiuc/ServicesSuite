@@ -13,12 +13,12 @@
             new TestCaseData("abcabc", null),
             new TestCaseData("abcacz", "b"),
             new TestCaseData("ABCac", "A"),
-            new TestCaseData("The quick brown fox jumps over the lazy dog", "q")
+            new TestCaseData("the quick brown fox jumps over the lazy dog", "q")
         };
 
         [Test]
         [TestCaseSource(nameof(FindFirstUniqueTestCases))]
-        public void FindFirstUniqueStringTests(string input, string expectedResult)
+        public void FindFirstUniqueStringTests(string input, char? expectedResult)
         {
             var actualResult = Utilities.FindFirstUnique(input);
             Assert.AreEqual(expectedResult, actualResult);
