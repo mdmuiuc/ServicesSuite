@@ -11,9 +11,9 @@
         {
             new TestCaseData(null, null),
             new TestCaseData("abcabc", null),
-            new TestCaseData("abcacz", "b"),
-            new TestCaseData("ABCac", "A"),
-            new TestCaseData("the quick brown fox jumps over the lazy dog", "q")
+            new TestCaseData("abcacz", 'b'),
+            new TestCaseData("ABCac", 'A'),
+            new TestCaseData("the quick brown fox jumps over the lazy dog", 'q')
         };
 
         [Test]
